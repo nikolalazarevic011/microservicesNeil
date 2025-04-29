@@ -43,22 +43,22 @@ public class AuctionsController : ControllerBase
         return _mapper.Map<AuctionDto>(auction);
     }
 
-    // [HttpPost]
-    // public async Task<ActionResult<AuctionDto>> CreateAuction(CreateAuctionDto auctionDto)
-    // {
-    //     var auction = _mapper.Map<Auction>(auctionDto);
-    //     // TODO: add current user as seller
-    //     auction.Seller = "test";
+    [HttpPost]
+    public async Task<ActionResult<AuctionDto>> CreateAuction(CreateAuctionDto auctionDto)
+    {
+        var auction = _mapper.Map<Auction>(auctionDto);
+        // TODO: add current user as seller
+        auction.Seller = "test";
 
-    //     _context.Auctions.Add(auction);
+        _context.Auctions.Add(auction);
 
-    //     var result = await _context.SaveChangesAsync() > 0;
+        var result = await _context.SaveChangesAsync() > 0;
 
-    //     if (!result) return BadRequest("Could not save changes to the DB");
+        if (!result) return BadRequest("Could not save changes to the DB");
 
-    //     return CreatedAtAction(nameof(GetAuctionById), 
-    //         new {auction.Id}, _mapper.Map<AuctionDto>(auction));
-    // }
+        return CreatedAtAction(nameof(GetAuctionById), 
+            new {auction.Id}, _mapper.Map<AuctionDto>(auction));
+    }
 
     // [HttpPut("{id}")]
     // public async Task<ActionResult> UpdateAuction(Guid id, UpdateAuctionDto updateAuctionDto)
