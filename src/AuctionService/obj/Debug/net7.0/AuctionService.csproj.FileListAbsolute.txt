@@ -37,3 +37,4 @@ C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\de
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\System.CodeDom.dll
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\obj\Debug\net7.0\AuctionService.csproj.AssemblyReference.cache
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\obj\Debug\net7.0\AuctionS.72D7E915.Up2Date
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\obj\Debug\net7.0\AuctionService.sourcelink.json
