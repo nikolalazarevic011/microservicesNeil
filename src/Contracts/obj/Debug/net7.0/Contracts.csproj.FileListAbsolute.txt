@@ -1,0 +1,12 @@
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\bin\Debug\net7.0\Contracts.deps.json
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\bin\Debug\net7.0\Contracts.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\bin\Debug\net7.0\Contracts.pdb
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\obj\Debug\net7.0\Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\obj\Debug\net7.0\Contracts.AssemblyInfoInputs.cache
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\obj\Debug\net7.0\Contracts.AssemblyInfo.cs
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\obj\Debug\net7.0\Contracts.csproj.CoreCompileInputs.cache
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\obj\Debug\net7.0\Contracts.sourcelink.json
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\obj\Debug\net7.0\Contracts.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\obj\Debug\net7.0\refint\Contracts.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\obj\Debug\net7.0\Contracts.pdb
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\Contracts\obj\Debug\net7.0\ref\Contracts.dll

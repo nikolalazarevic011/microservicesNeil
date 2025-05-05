@@ -24,8 +24,8 @@ public class DbInitializer
 
         var httpClient = scope.ServiceProvider.GetRequiredService<AuctionSvcHttpClient>();
 
-        var items = await httpClient.GetItemsForSearchDb();
-        
+        var items = await httpClient.GetItemsForSearchDb(); // 32. getting data from other db http way, BAD way
+
         Console.WriteLine(items.Count + " returned from the auction service");
 
         if (items.Count > 0) await DB.SaveAsync(items);

@@ -43,3 +43,12 @@ C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\de
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\obj\Debug\net7.0\SearchService.genruntimeconfig.cache
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\obj\Debug\net7.0\ref\SearchService.dll
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\bin\Debug\net7.0\Data\auctions.json
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\bin\Debug\net7.0\Microsoft.Extensions.Http.Polly.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\bin\Debug\net7.0\Polly.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\bin\Debug\net7.0\Polly.Extensions.Http.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\bin\Debug\net7.0\MassTransit.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\bin\Debug\net7.0\MassTransit.Abstractions.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\bin\Debug\net7.0\MassTransit.RabbitMqTransport.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\bin\Debug\net7.0\RabbitMQ.Client.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\bin\Debug\net7.0\Contracts.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\SearchService\bin\Debug\net7.0\Contracts.pdb
