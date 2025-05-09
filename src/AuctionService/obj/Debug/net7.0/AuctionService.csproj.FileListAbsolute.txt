@@ -44,3 +44,4 @@ C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\de
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\RabbitMQ.Client.dll
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Contracts.dll
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Contracts.pdb
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\MassTransit.EntityFrameworkCoreIntegration.dll

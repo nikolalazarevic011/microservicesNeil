@@ -18,8 +18,15 @@ builder.Services.AddMassTransit(x =>
     x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("search", false));
 
     x.UsingRabbitMq((context, cfg) =>
+
     {
-        cfg.ConfigureEndpoints(context);
+        cfg.ReceiveEndpoint("search-auction-created", e =>
+        {
+            e.UseMessageRetry(r => r.Interval(5, 5));
+
+            e.Consumer<AuctionCreatedConsumer>(context);
+        });
+        // cfg.ConfigureEndpoints(context); // ne moze oba configure enpoints - see chatgpt : Thanks for the full context — yes, the issue in your SearchService is exactly as I suspected:
     });
 });
 
