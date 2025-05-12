@@ -45,3 +45,11 @@ C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\de
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Contracts.dll
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Contracts.pdb
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\MassTransit.EntityFrameworkCoreIntegration.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Logging.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll

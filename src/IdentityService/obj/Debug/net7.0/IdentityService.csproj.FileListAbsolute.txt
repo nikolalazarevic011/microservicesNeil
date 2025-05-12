@@ -69,3 +69,4 @@ C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\de
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\IdentityService\obj\Debug\net7.0\IdentityService.pdb
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\IdentityService\obj\Debug\net7.0\IdentityService.genruntimeconfig.cache
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\IdentityService\obj\Debug\net7.0\ref\IdentityService.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\IdentityService\bin\Debug\net7.0\keys\is-signing-key-F436DD96EB135032D94725EFE10F691A.json
