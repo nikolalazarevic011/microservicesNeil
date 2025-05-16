@@ -27,13 +27,13 @@ builder.Services.AddMassTransit(x =>
             host.Password(builder.Configuration.GetValue("RabbitMq:Password", "guest"));
         });
         
-        cfg.ReceiveEndpoint("search-auction-created", e =>
-        {
-            e.UseMessageRetry(r => r.Interval(5, 5));
+        // cfg.ReceiveEndpoint("search-auction-created", e =>
+        // {
+        //     e.UseMessageRetry(r => r.Interval(5, 5));
 
-            e.Consumer<AuctionCreatedConsumer>(context);
-        });
-        // cfg.ConfigureEndpoints(context); // ne moze oba configure enpoints - see chatgpt : Thanks for the full context — yes, the issue in your SearchService is exactly as I suspected:
+        //     e.Consumer<AuctionCreatedConsumer>(context);
+        // });
+        cfg.ConfigureEndpoints(context); // ne moze oba configure enpoints - see chatgpt : Thanks for the full context — yes, the issue in your SearchService is exactly as I suspected:
     });
 });
 
