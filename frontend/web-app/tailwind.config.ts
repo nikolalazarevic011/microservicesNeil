@@ -1,6 +1,6 @@
 import type { Config } from "tailwindcss";
 import flowbiteReact from "flowbite-react/plugin/tailwindcss";
-
+import aspectRatio from '@tailwindcss/aspect-ratio';
 const config: Config = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -16,6 +16,6 @@ const config: Config = {
       },
     },
   },
-  plugins: [flowbiteReact],
+  plugins: [flowbiteReact,aspectRatio],
 };
 export default config;

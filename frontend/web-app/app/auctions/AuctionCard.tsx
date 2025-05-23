@@ -9,7 +9,10 @@ type Props = {
 
 export default function AuctionCard({ auction }: Props) {
     return (
-        <a href='#' className='group'>
+        <a   href='#' 
+            className='group'
+            onClick={(e) => e.preventDefault()}  // <span style="color: red; font-weight: bold;">// Prevent default link behavior</span>
+        >
             <div className='w-full bg-gray-200 aspect-w-16 aspect-h-10 rounded-lg overflow-hidden'>
                 <div>
                     <CarImage imageUrl={auction.imageUrl} />
