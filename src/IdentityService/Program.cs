@@ -1,4 +1,5 @@
 ﻿using IdentityService;
+using Polly;
 using Serilog;
 
 Log.Logger = new LoggerConfiguration()
@@ -20,9 +21,23 @@ try
         .ConfigureServices()
         .ConfigurePipeline();
 
-    // this seeding is only for the template to bootstrap the DB and users.
-    // in production you will likely want a different approach.
-    SeedData.EnsureSeedData(app);
+    //! Add retry logic for database seeding using Polly</span>
+    var retryPolicy = Policy
+        .Handle<Exception>()
+        .WaitAndRetryAsync(
+            5,
+            retryAttempt => TimeSpan.FromSeconds(10),
+            onRetry: (exception, timeSpan, retry, ctx) =>
+            {
+                Log.Warning(exception, "Failed to seed database on attempt {Retry}. Waiting {TimeSpan} before next attempt.", retry, timeSpan);
+            });
+
+    await retryPolicy.ExecuteAsync(async () =>
+    {
+        SeedData.EnsureSeedData(app);
+        await Task.CompletedTask;
+    });
+
     app.Run();
 }
 catch (Exception ex) when (

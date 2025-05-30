@@ -78,6 +78,10 @@
               "target": "Package",
               "version": "[7.0.18, )"
             },
+            "Polly": {
+              "target": "Package",
+              "version": "[7.2.4, )"
+            },
             "Serilog.AspNetCore": {
               "target": "Package",
               "version": "[6.0.0, )"

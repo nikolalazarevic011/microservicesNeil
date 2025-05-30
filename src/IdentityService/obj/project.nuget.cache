@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Bg0WgUALd4A=",
+  "dgSpecHash": "2KkumQoOhUA=",
   "success": true,
   "projectFilePath": "C:\\Nikola\\Courses\\Build a Microservices app with .Net and NextJS from scratch\\demo\\src\\IdentityService\\IdentityService.csproj",
   "expectedPackageFiles": [
@@ -50,6 +50,7 @@
     "C:\\Users\\NLazarevic\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\NLazarevic\\.nuget\\packages\\npgsql\\7.0.7\\npgsql.7.0.7.nupkg.sha512",
     "C:\\Users\\NLazarevic\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.18\\npgsql.entityframeworkcore.postgresql.7.0.18.nupkg.sha512",
+    "C:\\Users\\NLazarevic\\.nuget\\packages\\polly\\7.2.4\\polly.7.2.4.nupkg.sha512",
     "C:\\Users\\NLazarevic\\.nuget\\packages\\serilog\\2.10.0\\serilog.2.10.0.nupkg.sha512",
     "C:\\Users\\NLazarevic\\.nuget\\packages\\serilog.aspnetcore\\6.0.0\\serilog.aspnetcore.6.0.0.nupkg.sha512",
     "C:\\Users\\NLazarevic\\.nuget\\packages\\serilog.extensions.hosting\\5.0.0\\serilog.extensions.hosting.5.0.0.nupkg.sha512",
