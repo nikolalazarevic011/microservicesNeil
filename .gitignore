@@ -106,3 +106,13 @@ src/IdentityService/obj/Debug/net7.0/IdentityService.AssemblyInfoInputs.cache
 src/SearchService/obj/Debug/net7.0/SearchService.AssemblyInfo.cs
 src/SearchService/obj/Debug/net7.0/SearchService.AssemblyInfoInputs.cache
 src/SearchService/obj/Debug/net7.0/SearchService.csproj.AssemblyReference.cache
+src/AuctionService/obj/Debug/net7.0/AuctionService.AssemblyInfo.cs
+src/AuctionService/obj/Debug/net7.0/AuctionService.AssemblyInfoInputs.cache
+src/Contracts/obj/Debug/net7.0/Contracts.AssemblyInfo.cs
+src/Contracts/obj/Debug/net7.0/Contracts.AssemblyInfoInputs.cache
+src/GatewayService/obj/Debug/net7.0/GatewayService.AssemblyInfo.cs
+src/GatewayService/obj/Debug/net7.0/GatewayService.AssemblyInfoInputs.cache
+src/IdentityService/obj/Debug/net7.0/IdentityService.AssemblyInfo.cs
+src/IdentityService/obj/Debug/net7.0/IdentityService.AssemblyInfoInputs.cache
+src/SearchService/obj/Debug/net7.0/SearchService.AssemblyInfo.cs
+src/SearchService/obj/Debug/net7.0/SearchService.AssemblyInfoInputs.cache
