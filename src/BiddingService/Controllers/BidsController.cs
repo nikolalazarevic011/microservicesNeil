@@ -22,12 +22,21 @@ namespace BiddingService
         }
 
 
-
-
         [Authorize]
         [HttpPost]
         public async Task<ActionResult<BidDto>> PlaceBid(string auctionId, int amount)
         {
+
+            Console.WriteLine($"PlaceBid called with auctionId: {auctionId}, amount: {amount}");
+
+            // Debug: Check what auctions exist
+            var allAuctions = await DB.Find<Auction>().ExecuteAsync();
+            Console.WriteLine($"Total auctions in BiddingService DB: {allAuctions.Count}");
+            foreach (var a in allAuctions)
+            {
+                Console.WriteLine($"Auction ID: {a.ID}");
+            }
+
             var auction = await DB.Find<Auction>().OneAsync(auctionId);
 
             if (auction == null)

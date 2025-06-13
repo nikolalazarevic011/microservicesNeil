@@ -1,21 +1,20 @@
 using BiddingService;
+using BiddingService.Consumers;
 using MassTransit;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using MongoDB.Driver;
 using MongoDB.Entities;
+using Polly;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
-
-
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
 builder.Services.AddMassTransit(x =>
 {
-
     x.AddConsumersFromNamespaceContaining<AuctionCreatedConsumer>();
     x.SetEndpointNameFormatter(new KebabCaseEndpointNameFormatter("bids", false));
-
 
     x.UsingRabbitMq((context, cfg) =>
     {
@@ -37,17 +36,29 @@ builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
         options.TokenValidationParameters.NameClaimType = "username";
     });
 
-builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());    
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-
+app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
-await DB.InitAsync("BidDB", MongoClientSettings.FromConnectionString(builder.Configuration.GetConnectionString("BidDbConnection")));
+// Initialize MongoDB with retry logic
+var retryPolicy = Policy
+    .Handle<Exception>()
+    .WaitAndRetryAsync(
+        5,
+        retryAttempt => TimeSpan.FromSeconds(5),
+        onRetry: (exception, timeSpan, retry, ctx) =>
+        {
+            Console.WriteLine($"Failed to connect to MongoDB on attempt {retry}. Waiting {timeSpan} before next attempt.");
+        });
 
+await retryPolicy.ExecuteAsync(async () =>
+{
+    await DB.InitAsync("BidDB", MongoClientSettings.FromConnectionString(
+        builder.Configuration.GetConnectionString("BidDbConnection")));
+    Console.WriteLine("Successfully connected to MongoDB");
+});
 
 app.Run();
-
