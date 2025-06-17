@@ -53,3 +53,13 @@ C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\de
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\AuctionService.staticwebassets.endpoints.json
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\obj\Debug\net7.0\staticwebassets.build.endpoints.json
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\obj\Debug\net7.0\staticwebassets\msbuild.AuctionService.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Google.Protobuf.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Grpc.AspNetCore.Server.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Grpc.AspNetCore.Server.ClientFactory.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Grpc.Core.Api.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Grpc.Net.Client.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Grpc.Net.ClientFactory.dll
+C:\Nikola\Courses\Build a Microservices app with .Net and NextJS from scratch\demo\src\AuctionService\bin\Debug\net7.0\Grpc.Net.Common.dll
