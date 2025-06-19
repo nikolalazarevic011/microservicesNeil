@@ -13,14 +13,13 @@ COPY src/NotificationService/NotificationService.csproj src/NotificationService/
 COPY src/Contracts/Contracts.csproj src/Contracts/Contracts.csproj
 COPY src/IdentityService/IdentityService.csproj src/IdentityService/IdentityService.csproj
 
-
 # Restore package deps
 RUN dotnet restore demo.sln
 
-# Copy the app folders over
-COPY src/AuctionService src/AuctionService
+# Copy the app folders over - FIX: Copy NotificationService instead of AuctionService
+COPY src/NotificationService src/NotificationService
 COPY src/Contracts src/Contracts
-WORKDIR /app/src/AuctionService
+WORKDIR /app/src/NotificationService
 RUN dotnet publish -c Release -o /app/src/out
 
 # Build runtime image
