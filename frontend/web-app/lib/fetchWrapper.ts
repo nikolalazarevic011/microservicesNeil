@@ -1,12 +1,13 @@
-import { auth } from '@/auth';
+import { auth } from "@/auth";
+import { error, log } from "console";
 
-const baseUrl = 'http://localhost:6002/';
+const baseUrl = "http://localhost:6002/";
 
 async function get(url: string) {
     const requestOptions = {
-        method: 'GET',
-        headers: await getHeaders()
-    }
+        method: "GET",
+        headers: await getHeaders(),
+    };
 
     const response = await fetch(baseUrl + url, requestOptions);
 
@@ -15,10 +16,10 @@ async function get(url: string) {
 
 async function post(url: string, body: {}) {
     const requestOptions = {
-        method: 'POST',
+        method: "POST",
         headers: await getHeaders(),
-        body: JSON.stringify(body)
-    }
+        body: JSON.stringify(body),
+    };
 
     const response = await fetch(baseUrl + url, requestOptions);
 
@@ -27,10 +28,10 @@ async function post(url: string, body: {}) {
 
 async function put(url: string, body: {}) {
     const requestOptions = {
-        method: 'PUT',
+        method: "PUT",
         headers: await getHeaders(),
-        body: JSON.stringify(body)
-    }
+        body: JSON.stringify(body),
+    };
 
     const response = await fetch(baseUrl + url, requestOptions);
 
@@ -39,9 +40,9 @@ async function put(url: string, body: {}) {
 
 async function del(url: string) {
     const requestOptions = {
-        method: 'DELETE',
-        headers: await getHeaders()
-    }
+        method: "DELETE",
+        headers: await getHeaders(),
+    };
 
     const response = await fetch(baseUrl + url, requestOptions);
 
@@ -51,27 +52,35 @@ async function del(url: string) {
 async function getHeaders() {
     const session = await auth();
     const headers = {
-        'Content-type': 'application/json'
+        "Content-type": "application/json",
     } as any;
     if (session?.accessToken) {
-        headers.Authorization = 'Bearer ' + session.accessToken
+        headers.Authorization = "Bearer " + session.accessToken;
     }
     return headers;
 }
 
 async function handleResponse(response: Response) {
     const text = await response.text();
-    const data = text && JSON.parse(text);
+
+    let data;
+
+    try {
+        data = text ? JSON.parse(text) : null;
+    } catch {
+        data = null;
+    }
 
     if (response.ok) {
-        return data || response.statusText
+        return data || response.statusText;
     } else {
+        console.log(response)
         const error = {
             status: response.status,
-            message: response.statusText
-        }
+            message: typeof data === "string" ? data : response.statusText,
+        };
 
-        return {error};
+        return { error };
     }
 }
 
@@ -79,5 +88,5 @@ export const fetchWrapper = {
     get,
     post,
     put,
-    del
-}
+    del,
+};
