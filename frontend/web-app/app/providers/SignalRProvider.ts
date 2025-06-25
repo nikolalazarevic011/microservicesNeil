@@ -9,9 +9,9 @@ import { useParams } from "next/navigation";
 import { ReactNode, useCallback, useEffect, useRef } from "react";
 import { set } from "react-hook-form";
 import toast from "react-hot-toast";
-import AuctionCreatedToast from "../components/AuctionCreatedToast";
 import { getDetailedViewData } from "../actions/auctionActions";
 // import AuctionFinishedToast from "../components/AuctionFinishedToast";
+import AuctionCreatedToast from "@/app/components/AuctionCreatedToast";
 
 type Props = {
     children: ReactNode;
@@ -35,13 +35,14 @@ export default function SignalRProvider({ children, user }: Props) {
     //     }, {success: {duration: 10000, icon: null}})
     // }, [])
 
- const handleAuctionCreated = useCallback((auction: Auction) => {
-        if (user?.username !== auction.seller) {
-            return toast(<AuctionCreatedToast auction={auction} />, {
-                duration: 10000,
-            })
-        }
-    }, [user])
+    const handleAuctionCreated = useCallback((auctionData: Auction) => {
+    if ((user as any)?.username !== auctionData.seller) {
+        const toastElement = <AuctionCreatedToast auction={auctionData} />;
+        return toast(toastElement, {
+            duration: 10000,
+        })
+    }
+}, [user])
 
     const handleBidPlaced = useCallback(
         (bid: Bid) => {
@@ -72,7 +73,7 @@ export default function SignalRProvider({ children, user }: Props) {
         }
 
         connection.current.on("BidPlaced", handleBidPlaced);
-        connection.current.on('AuctionCreated', handleAuctionCreated);
+        connection.current.on("AuctionCreated", handleAuctionCreated);
         // connection.current.on('AuctionFinished', handleAuctionFinished);
 
         return () => {
